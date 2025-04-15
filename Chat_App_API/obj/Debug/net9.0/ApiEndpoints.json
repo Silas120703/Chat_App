@@ -1,0 +1,853 @@
+[
+  {
+    "ContainingType": "Chat_App_API.Controllers.AdminController",
+    "Method": "BlockUser",
+    "RelativePath": "api/Admin/blockUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.AdminController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Admin/changePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changePasswordDTO",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserChangePasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.AdminController",
+    "Method": "GetAllUser",
+    "RelativePath": "api/Admin/getAllUser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.AdminController",
+    "Method": "GetUserByEmail",
+    "RelativePath": "api/Admin/getUserByEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.AdminController",
+    "Method": "UnBlockUser",
+    "RelativePath": "api/Admin/unBlockUser",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.AdminController",
+    "Method": "UpdateUserRole",
+    "RelativePath": "api/Admin/updateUserRole",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "roleDTO",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserChangeRoleDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ConnectionController",
+    "Method": "GetUserConnectionsAsync",
+    "RelativePath": "api/Connection",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ConnectionController",
+    "Method": "AddConnection",
+    "RelativePath": "api/Connection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "connectionId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "browserId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ConnectionController",
+    "Method": "RemoveConnection",
+    "RelativePath": "api/Connection",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Chat_App_Shared.DTOs.UserConnectionDTO.UserConnectionRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ContactsController",
+    "Method": "AcceptFriend",
+    "RelativePath": "api/Contacts/AcceptFriend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contact",
+        "Type": "Chat_App_Shared.DTOs.ContactDTO.ContactRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ContactsController",
+    "Method": "AddFriend",
+    "RelativePath": "api/Contacts/AddFriend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contact",
+        "Type": "Chat_App_Shared.DTOs.ContactDTO.ContactRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ContactsController",
+    "Method": "DeleteFriend",
+    "RelativePath": "api/Contacts/DeleteFriend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contact",
+        "Type": "Chat_App_Shared.DTOs.ContactDTO.ContactRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ContactsController",
+    "Method": "GetContactsByUserEmail",
+    "RelativePath": "api/Contacts/GetContactsByUserEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ContactsController",
+    "Method": "GetFriendByID",
+    "RelativePath": "api/Contacts/GetFriendByID",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contact",
+        "Type": "Chat_App_Shared.DTOs.ContactDTO.ContactRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ContactsController",
+    "Method": "RejectFriend",
+    "RelativePath": "api/Contacts/RejectFriend",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "contact",
+        "Type": "Chat_App_Shared.DTOs.ContactDTO.ContactRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ConversationController",
+    "Method": "Get",
+    "RelativePath": "api/Conversation/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userEmails",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.ConversationController",
+    "Method": "GetByGroupId",
+    "RelativePath": "api/Conversation/GetByGroupId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupController",
+    "Method": "AddGroupAsync",
+    "RelativePath": "api/Group",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupDto",
+        "Type": "Chat_App_Shared.DTOs.GroupDTO.GroupDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.Group",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupController",
+    "Method": "GetGroupByIDAsync",
+    "RelativePath": "api/Group/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.Group",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupController",
+    "Method": "PutGroupByIDAsync",
+    "RelativePath": "api/Group/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupDto",
+        "Type": "Chat_App_Shared.DTOs.GroupDTO.GroupDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.Group",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupController",
+    "Method": "DeleteGroupByIDAsync",
+    "RelativePath": "api/Group/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupController",
+    "Method": "CreateGroupWithMembersAsync",
+    "RelativePath": "api/Group/CreateWithMembers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "createGroupRequestDTO",
+        "Type": "Chat_App_Shared.DTOs.GroupDTO.CreateGroupRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.Group",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupMemberController",
+    "Method": "AddMember",
+    "RelativePath": "api/GroupMember/addMember",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.GroupMember",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupMemberController",
+    "Method": "RemoveMember",
+    "RelativePath": "api/GroupMember/deleteMember",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.GroupMember",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupMemberController",
+    "Method": "GetGroupMemberRole",
+    "RelativePath": "api/GroupMember/GetGroupMemberRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupMemberController",
+    "Method": "GetGroupMembers",
+    "RelativePath": "api/GroupMember/GetGroupMembers",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Chat_App_Shared.DTOs.GroupMemberDTO.ResponeGroupMemberDTO, Chat_App_Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.GroupMemberController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/GroupMember/UpdateMemberRole",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "UserEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "role",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.GroupMember",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.MessageController",
+    "Method": "GetMessagesByGroupId",
+    "RelativePath": "api/Message/{groupId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "userEmail",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[Chat_App_Shared.DTOs.MassageDTO.ResponeMessageDTO, Chat_App_Shared, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.MessageController",
+    "Method": "DeleteMessageAsync",
+    "RelativePath": "api/Message/{messageId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "messageId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Database.Entities.Message",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.MessageController",
+    "Method": "AddMessageAsync",
+    "RelativePath": "api/Message/AddMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "groupId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "connectId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "message",
+        "Type": "Chat_App_Shared.DTOs.MassageDTO.MessageDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Chat_App_Shared.DTOs.MassageDTO.ResponeMessageDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "Delete",
+    "RelativePath": "api/User/byEmail",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "GetByEmail",
+    "RelativePath": "api/User/byEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "GetById",
+    "RelativePath": "api/User/byId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/User/changePassword",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "changePasswordDTO",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserChangePasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "CheckEmail",
+    "RelativePath": "api/User/CheckEmail",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "ForgotPassword",
+    "RelativePath": "api/User/ForgotPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "Login",
+    "RelativePath": "api/User/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "Rigister",
+    "RelativePath": "api/User/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserRegisterDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "VerifyOTP",
+    "RelativePath": "api/User/RegisterVerifyOTP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserVirifyDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "ResetPassword",
+    "RelativePath": "api/User/ResetPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserResetPasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "Update",
+    "RelativePath": "api/User/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Chat_App_API.Controllers.UserController",
+    "Method": "VerifyForgotOTP",
+    "RelativePath": "api/User/VerifyForgotOTP",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userDto",
+        "Type": "Chat_App_Shared.DTOs.UserDTO.UserVirifyDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

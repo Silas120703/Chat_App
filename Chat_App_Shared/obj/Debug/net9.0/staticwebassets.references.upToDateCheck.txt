@@ -1,0 +1,2 @@
+D:\Intern\Chat_App\Chat_App_Database\obj\Debug\net9.0\staticwebassets.build.json
+D:\Intern\Chat_App\Chat_App_Database\obj\Debug\net9.0\staticwebassets.build.json
